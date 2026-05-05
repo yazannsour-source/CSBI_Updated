@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 80" fill="none">
+  <!-- Emblem / shield mark -->
+  <g transform="translate(6,6)">
+    <!-- Shield outline -->
+    <path d="M34 2 L62 12 L62 42 Q62 60 34 70 Q6 60 6 42 L6 12 Z" fill="#1a5c3a"/>
+    <!-- Inner shield highlight -->
+    <path d="M34 9 L56 17 L56 41 Q56 56 34 64 Q12 56 12 41 L12 17 Z" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+    <!-- Arabic-style geometric star in center -->
+    <g transform="translate(34,36)" fill="#c9a84c">
+      <!-- 8-pointed star -->
+      <polygon points="0,-14 3.5,-3.5 14,0 3.5,3.5 0,14 -3.5,3.5 -14,0 -3.5,-3.5" opacity="0.9"/>
+      <circle cx="0" cy="0" r="4" fill="#1a5c3a"/>
+    </g>
+    <!-- Top arc text area suggestion - palm frond lines -->
+    <path d="M20 18 Q34 10 48 18" stroke="rgba(255,255,255,0.5)" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    <!-- Two palm leaves -->
+    <path d="M34 22 Q26 16 22 10" stroke="rgba(255,255,255,0.6)" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+    <path d="M34 22 Q42 16 46 10" stroke="rgba(255,255,255,0.6)" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+    <path d="M34 22 Q28 14 24 8" stroke="rgba(255,255,255,0.35)" stroke-width="0.8" fill="none" stroke-linecap="round"/>
+    <path d="M34 22 Q40 14 44 8" stroke="rgba(255,255,255,0.35)" stroke-width="0.8" fill="none" stroke-linecap="round"/>
+    <!-- Book / knowledge base -->
+    <rect x="24" y="50" width="20" height="4" rx="1" fill="rgba(255,255,255,0.5)"/>
+    <rect x="26" y="47" width="8" height="4" rx="0.5" fill="rgba(255,255,255,0.35)"/>
+    <rect x="34" y="47" width="8" height="4" rx="0.5" fill="rgba(255,255,255,0.25)"/>
+  </g>
+
+  <!-- University name - English -->
+  <text x="82" y="30" font-family="Georgia,'Times New Roman',serif" font-size="13.5" font-weight="700" fill="#1a5c3a" letter-spacing="0.3">Prince Mohammad Bin Fahd</text>
+  <text x="82" y="47" font-family="Georgia,'Times New Roman',serif" font-size="13.5" font-weight="700" fill="#1a5c3a" letter-spacing="0.3">University</text>
+
+  <!-- Gold rule -->
+  <line x1="82" y1="53" x2="330" y2="53" stroke="#c9a84c" stroke-width="1.2"/>
+
+  <!-- Arabic name -->
+  <text x="330" y="68" font-family="'Traditional Arabic','Arabic Typesetting',serif" font-size="12" fill="#2e7d52" text-anchor="end" letter-spacing="0.5">جامعة الأمير محمد بن فهد</text>
+</svg>
