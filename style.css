@@ -529,7 +529,7 @@ section { padding: var(--pad-section); }
 
   /* Leader cards */
   .leader-card { flex-direction: column; }
-  .leader-card .photo-col { width: 100%; height: 200px; }
+  .leader-card .photo-col { width: 100%; height: 400px; }
 
   /* Mission strip */
   .mission-strip { grid-template-columns: 1fr !important; padding: 36px 28px !important; }
