@@ -525,7 +525,7 @@ section { padding: var(--pad-section); }
 
   /* Faculty */
   .faculty-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
-  .faculty-card .photo-wrap { aspect-ratio: 320/430; }
+  .faculty-card .photo-wrap { aspect-ratio: 160/215; }
 
   /* Leader cards */
   .leader-card { flex-direction: column; }
