@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSBI – Centre for Sustainable Business and Innovation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-brand">
+    <a href="https://www.pmu.edu.sa" target="_blank">
+      <img src="images/pmu-logo-official.png" alt="PMU" class="nav-pmu-logo">
+    </a>
+    <div class="nav-brand-sep"></div>
+    <a href="index.html">
+      <img src="images/csbi-logo-transparent.png" alt="CSBI" class="nav-csbi-logo">
+    </a>
+  </div>
+    <ul class="nav-links">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li class="has-dropdown">
+      <a href="about.html">About</a>
+      <ul class="nav-dropdown">
+        <li><a href="about.html">About CSBI</a></li>
+        <li><a href="vision.html">Vision</a></li>
+        <li><a href="mission.html">Mission</a></li>
+        <li><a href="values.html">Values</a></li>
+        <li><a href="goals.html">Goals</a></li>
+      </ul>
+    </li>
+    <li><a href="research.html">Research</a></li>
+    <li><a href="education.html">Education</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="events.html">Events</a></li>
+    <li><a href="contact.html" class="nav-cta">Contact</a></li>
+  </ul>
+  <button class="nav-hamburger" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu">
+    
+  </button>
+</nav>
+
+<!-- HERO -->
+<section id="hero" style="padding-top:var(--nav-h);min-height:100vh;background:linear-gradient(135deg,rgba(8,20,12,0.88) 0%,rgba(26,92,58,0.82) 55%,rgba(46,125,82,0.78) 100%),url(images/hero-bg.png) center/cover no-repeat;display:flex;align-items:center;position:relative;overflow:hidden;">
+  <div style="position:absolute;inset:0;background:url('data:image/svg+xml,%3Csvg width=60 height=60 viewBox=0 0 60 60 xmlns=http://www.w3.org/2000/svg%3E%3Cg fill=%23ffffff fill-opacity=0.025%3E%3Cpath d=M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z/%3E%3C/g%3E%3C/svg%3E');"></div>
+  <div class="container hero-inner-3col" style="position:relative;display:grid;grid-template-columns:1fr auto 1fr;gap:48px;align-items:center;padding-top:56px;padding-bottom:56px;">
+    <div>
+      <h1 class="anim-2" style="font-family:'Playfair Display',serif;font-size:clamp(2rem,3.2vw,3.2rem);font-weight:700;color:var(--white);line-height:1.12;margin-bottom:20px;">Centre for <span style="color:var(--gold)">Sustainable Business</span> &amp; Innovation</h1>
+      <p class="anim-3" style="color:rgba(255,255,255,.75);font-size:1rem;font-weight:300;line-height:1.85;margin-bottom:22px;max-width:400px;">A forward-looking platform advancing sustainable economic transformation through innovation, research, and collaboration.</p>
+      <p class="anim-4" style="font-family:'Playfair Display',serif;font-style:italic;color:var(--gold-light);font-size:1.05rem;padding-left:18px;border-left:3px solid var(--gold);margin-bottom:32px;">"Innovating Business for a Sustainable Future"</p>
+      <div class="anim-5 hero-btns" style="display:flex;gap:12px;flex-wrap:wrap;">
+        <a href="about.html" class="btn btn-gold">Discover CSBI</a>
+        <a href="contact.html" class="btn btn-outline-light">Get in Touch</a>
+      </div>
+    </div>
+    <div class="anim-3 hero-logo-lockup" style="display:flex;flex-direction:column;align-items:center;gap:0;flex-shrink:0;width:220px;">
+      <a href="https://www.pmu.edu.sa" target="_blank" style="display:block;">
+        <img src="images/pmu-logo-official.png" alt="Prince Mohammad Bin Fahd University" class="pmu" style="width:150px;height:150px;object-fit:contain;filter:drop-shadow(0 4px 20px rgba(0,0,0,.5));transition:transform .3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+      </a>
+      <div style="width:1px;height:36px;background:linear-gradient(to bottom,rgba(201,168,76,.6),rgba(201,168,76,.1));margin:4px 0;"></div>
+      <div style="color:var(--gold);font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;font-weight:600;margin-bottom:4px;opacity:.7;">&#x25C6;</div>
+      <div style="width:1px;height:36px;background:linear-gradient(to bottom,rgba(201,168,76,.1),rgba(201,168,76,.6));margin:4px 0;"></div>
+      <a href="index.html" style="display:block;">
+        <img src="images/csbi-logo-transparent.png" alt="CSBI" class="csbi" style="width:120px;height:auto;filter:drop-shadow(0 4px 20px rgba(0,0,0,.4));transition:transform .3s;" onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'">
+      </a>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+      <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:8px;padding:18px 14px;"><h4 style="color:var(--white);font-size:.85rem;font-weight:600;margin-bottom:4px;">Research &amp; Insights</h4><p style="color:rgba(255,255,255,.75);font-size:.76rem;line-height:1.5;">Cutting-edge interdisciplinary research informing policy and industry</p></div>
+      <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:8px;padding:18px 14px;"><h4 style="color:var(--white);font-size:.85rem;font-weight:600;margin-bottom:4px;">Industry Collaboration</h4><p style="color:rgba(255,255,255,.75);font-size:.76rem;line-height:1.5;">Co-creating solutions with academia, government &amp; business</p></div>
+      <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:8px;padding:18px 14px;"><h4 style="color:var(--white);font-size:.85rem;font-weight:600;margin-bottom:4px;">Education &amp; Training</h4><p style="color:rgba(255,255,255,.75);font-size:.76rem;line-height:1.5;">Executive programs and certifications for future-ready leaders</p></div>
+      <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:8px;padding:18px 14px;"><h4 style="color:var(--white);font-size:.85rem;font-weight:600;margin-bottom:4px;">Innovation Support</h4><p style="color:rgba(255,255,255,.75);font-size:.76rem;line-height:1.5;">Startup incubation, innovation labs &amp; scalable solutions</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- KPI STRIP -->
+<section class="kpi-strip">
+  <div class="container">
+    <div class="kpi-item"><span class="kpi-number">5</span><span class="kpi-label">Research Clusters</span></div>
+    <div class="kpi-item"><span class="kpi-number">12</span><span class="kpi-label">Faculty Members</span></div>
+    <div class="kpi-item"><span class="kpi-number">4</span><span class="kpi-label">Core Programs</span></div>
+    <div class="kpi-item"><span class="kpi-number">2030</span><span class="kpi-label">Vision Aligned</span></div>
+  </div>
+</section>
+
+<!-- ABOUT CSBI PHOTO SECTION -->
+<section class="about-intro">
+  <div class="container">
+    <div class="grid-2" style="align-items:center;gap:64px;">
+      <div class="about-intro-img-wrap">
+        <img src="https://csbi-pmu.netlify.app/images/about.jpg" alt="Welcome to CSBI" onerror="this.onerror=null;this.src='images/image19.jpeg';" class="img-rounded img-shadow" style="width:100%;object-fit:cover;max-height:420px;">
+      </div>
+      <div>
+        <span class="section-label">Welcome to CSBI</span>
+        <h2 class="section-title">A Platform Dedicated to Sustainable Transformation</h2>
+        <div class="divider"></div>
+        <p style="color:var(--gray);line-height:1.85;font-size:.97rem;margin-bottom:16px;">The Centre for Sustainable Business and Innovation (CSBI) is a forward-looking platform dedicated to advancing sustainable economic transformation through innovation, research, and collaboration.</p>
+        <p style="color:var(--gray);line-height:1.85;font-size:.97rem;margin-bottom:16px;">Positioned at the intersection of business, technology, and sustainability, CSBI catalyzes building resilient, inclusive, and environmentally responsible economies aligned with <strong style="color:var(--dark);">Saudi Vision 2030</strong>.</p>
+        <p style="color:var(--gray);line-height:1.85;font-size:.97rem;">As Saudi Arabia accelerates its transformation, CSBI responds to the need for institutions that bridge knowledge, innovation, and implementation.</p>
+        <a href="about.html" class="about-read-more">Read More &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY CSBI MATTERS -->
+<section class="bg-cream">
+  <div class="container">
+    <div class="grid-2" style="align-items:center;">
+      <div>
+        <img src="images/image2.jpeg" alt="Saudi Vision 2030" class="img-rounded img-shadow" style="width:100%;object-fit:cover;max-height:380px;">
+      </div>
+      <div>
+        <span class="section-label">Why CSBI Matters</span>
+        <h2 class="section-title">Responding to Saudi Arabia's Historic Transformation</h2>
+        <div class="divider"></div>
+        <p style="color:var(--gray);line-height:1.85;font-size:.97rem;margin-bottom:28px;">Saudi Arabia is undergoing a historic shift toward diversification, innovation, and sustainability. Mega-projects like NEOM and national initiatives such as the Saudi Green Initiative highlight the Kingdom's commitment to environmental leadership and economic transformation.</p>
+        <ul style="display:flex;flex-direction:column;gap:14px;">
+          <li style="display:flex;gap:12px;align-items:flex-start;color:var(--dark);font-size:.94rem;"><span style="color:var(--green-light);font-weight:700;flex-shrink:0;">&#10003;</span> Supporting businesses in adopting sustainable practices</li>
+          <li style="display:flex;gap:12px;align-items:flex-start;color:var(--dark);font-size:.94rem;"><span style="color:var(--green-light);font-weight:700;flex-shrink:0;">&#10003;</span> Enabling innovation ecosystems that drive economic growth</li>
+          <li style="display:flex;gap:12px;align-items:flex-start;color:var(--dark);font-size:.94rem;"><span style="color:var(--green-light);font-weight:700;flex-shrink:0;">&#10003;</span> Developing talent equipped to lead sustainability transitions</li>
+          <li style="display:flex;gap:12px;align-items:flex-start;color:var(--dark);font-size:.94rem;"><span style="color:var(--green-light);font-weight:700;flex-shrink:0;">&#10003;</span> Advancing research that informs policy and industry</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PHOTO GALLERY SLIDESHOW -->
+<section class="gallery-section">
+  <div class="container" style="text-align:center;margin-bottom:40px;">
+    <span class="section-label light">PMU Campus</span>
+    <h2 class="section-title light">Our Facilities</h2>
+    <div class="divider" style="margin:0 auto;"></div>
+  </div>
+  <div class="container">
+    <div class="slideshow-wrap">
+      <div class="slideshow" id="slideshow">
+        <div class="slide active">
+          <img src="https://manbeapig101.github.io/csbi-website/images/auditorium.jpg" onerror="this.onerror=null;this.src='images/image2.jpeg';" alt="PMU Auditorium">
+          <div class="slide-caption">PMU Auditorium</div>
+        </div>
+        <div class="slide">
+          <img src="https://manbeapig101.github.io/csbi-website/images/pmu-library.jpg" onerror="this.onerror=null;this.src='images/image3.jpeg';" alt="PMU Library">
+          <div class="slide-caption">PMU Library</div>
+        </div>
+        <div class="slide">
+          <img src="https://manbeapig101.github.io/csbi-website/images/pmu-moot-court.jpg" onerror="this.onerror=null;this.src='images/image4.jpeg';" alt="PMU Moot Court">
+          <div class="slide-caption">PMU Moot Court</div>
+        </div>
+        <div class="slide">
+          <img src="https://manbeapig101.github.io/csbi-website/images/pmu-vip-room.jpg" onerror="this.onerror=null;this.src='images/image18.jpeg';" alt="PMU VIP Meeting Room">
+          <div class="slide-caption">PMU VIP Meeting Room</div>
+        </div>
+        <button class="slide-arrow prev" onclick="moveSlide(-1)" aria-label="Previous">&#8249;</button>
+        <button class="slide-arrow next" onclick="moveSlide(1)" aria-label="Next">&#8250;</button>
+      </div>
+      <div class="slide-dots" id="slideDots">
+        <button class="slide-dot active" onclick="goToSlide(0)"></button>
+        <button class="slide-dot" onclick="goToSlide(1)"></button>
+        <button class="slide-dot" onclick="goToSlide(2)"></button>
+        <button class="slide-dot" onclick="goToSlide(3)"></button>
+      </div>
+      <div class="gallery-cta-wrap">
+        <a class="gallery-cta-link" href="https://www.pmu.edu.sa" target="_blank">View PMU Facilities Profile &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT YOU FIND HERE -->
+<section class="bg-white">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:52px;">
+      <span class="section-label">Our Offerings</span>
+      <h2 class="section-title">What You Will Find Here</h2>
+      <div class="divider" style="margin:0 auto 0;"></div>
+    </div>
+    <div class="grid-3" style="gap:28px;">
+      <div class="card" style="text-align:center;"><img src="images/image3.jpeg" alt="Research" class="img-rounded" style="width:100%;height:180px;object-fit:cover;margin-bottom:20px;"><h3>Cutting-edge Research</h3><p>Insights and findings at the frontier of sustainable business, ESG, and digital transformation.</p><a href="research.html" style="display:inline-block;margin-top:16px;color:var(--green);font-size:.85rem;font-weight:600;">Explore Research &rarr;</a></div>
+      <div class="card" style="text-align:center;"><img src="images/image4.jpeg" alt="Collaboration" class="img-rounded" style="width:100%;height:180px;object-fit:cover;margin-bottom:20px;"><h3>Industry Collaboration</h3><p>Corporate partnerships, innovation labs, and startup incubation opportunities.</p><a href="research.html#industry" style="display:inline-block;margin-top:16px;color:var(--green);font-size:.85rem;font-weight:600;">Partner With Us &rarr;</a></div>
+      <div class="card" style="text-align:center;"><img src="images/image18.jpeg" alt="Education" class="img-rounded" style="width:100%;height:180px;object-fit:cover;margin-bottom:20px;"><h3>Training &amp; Education</h3><p>Executive programs, certifications, and fellowships for sustainability leaders.</p><a href="education.html" style="display:inline-block;margin-top:16px;color:var(--green);font-size:.85rem;font-weight:600;">View Programs &rarr;</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- PHOTO STRIP -->
+<section style="padding:0;background:var(--dark);overflow:hidden;">
+  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:0;">
+    <div style="overflow:hidden;aspect-ratio:4/3;">
+      <img src="images/image32.jpeg" alt="Sustainable Future" style="width:100%;height:100%;object-fit:cover;transition:transform .4s;" onmouseover="this.style.transform='scale(1.06)'" onmouseout="this.style.transform='scale(1)'">
+    </div>
+    <div style="overflow:hidden;aspect-ratio:4/3;">
+      <img src="images/image47.jpeg" alt="Research Excellence" style="width:100%;height:100%;object-fit:cover;transition:transform .4s;" onmouseover="this.style.transform='scale(1.06)'" onmouseout="this.style.transform='scale(1)'">
+    </div>
+    <div style="overflow:hidden;aspect-ratio:4/3;">
+      <img src="images/image61.jpeg" alt="Innovation" style="width:100%;height:100%;object-fit:cover;transition:transform .4s;" onmouseover="this.style.transform='scale(1.06)'" onmouseout="this.style.transform='scale(1)'">
+    </div>
+    <div style="overflow:hidden;aspect-ratio:4/3;">
+      <img src="images/image78.jpeg" alt="Global Impact" style="width:100%;height:100%;object-fit:cover;transition:transform .4s;" onmouseover="this.style.transform='scale(1.06)'" onmouseout="this.style.transform='scale(1)'">
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<section class="bg-green" style="padding:60px 0;">
+  <div class="container" style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:24px;">
+    <div>
+      <h2 style="font-family:'Playfair Display',serif;font-size:1.8rem;color:var(--white);font-weight:700;margin-bottom:8px;">Ready to Navigate Sustainability Together?</h2>
+      <p style="color:rgba(255,255,255,.7);font-size:.97rem;">CSBI is more than a research centre — it is a platform for transformation.</p>
+    </div>
+    <div style="display:flex;gap:14px;flex-wrap:wrap;">
+      <a href="about.html" class="btn btn-gold">Learn More</a>
+      <a href="contact.html" class="btn btn-outline-light">Contact Us</a>
+    </div>
+  </div>
+</section>
+
+<!-- RICH FOOTER -->
+<footer class="rich-footer">
+  <div class="rich-footer-grid">
+    <div class="rfooter-brand">
+      <div class="rfooter-brand-logos">
+        <a href="index.html"><img src="images/csbi-logo-transparent.png" alt="CSBI"></a>
+        <div class="sep"></div>
+        <a href="https://www.pmu.edu.sa" target="_blank"><img src="images/pmu-logo-official.png" alt="PMU"></a>
+      </div>
+      <p><strong style="color:rgba(255,255,255,.8);">Centre for Sustainable Business and Innovation</strong></p>
+      <p>Prince Mohammad Bin Fahd University</p>
+      <p>617, Al Jawharah, Khobar</p>
+      <p>Dhahran 34754, Eastern Province</p>
+      <p>Saudi Arabia</p>
+    </div>
+    <div class="rfooter-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="vision.html">Vision &amp; Mission</a></li>
+        <li><a href="values.html">Values</a></li>
+        <li><a href="goals.html">Goals</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="rfooter-col">
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="https://www.pmu.edu.sa" target="_blank">PMU Website</a></li>
+        <li><a href="https://www.pmu.edu.sa/college-of-business" target="_blank">College of Business</a></li>
+        <li><a href="research.html#journal">ESBR Journal</a></li>
+        <li><a href="research.html">Research Clusters</a></li>
+        <li><a href="contact.html">Campus Map</a></li>
+      </ul>
+    </div>
+    <div class="rfooter-col">
+      <h4>Get in Touch</h4>
+      <div class="rfooter-contact-row"><span>+966 013 849 8584</span></div>
+      <div class="rfooter-contact-row"><span class="ico">️<span>Head: Mislam@pmu.edu.sa</span></div>
+      <div class="rfooter-contact-row"><span>Journal: Editor.esbr@pmu.edu.sa</span></div>
+      <div class="rfooter-contact-row"><span>Webmaster: Yalnsour@pmu.edu.sa</span></div>
+      <a class="rfooter-contact-btn" href="contact.html"> Contact Us</a>
+    </div>
+  </div>
+  <!-- PMU Campus Banner -->
+  <div class="rfooter-campus-banner">
+    <img src="images/pmu-campus-transparent.png" alt="Prince Mohammad Bin Fahd University Campus">
+  </div>
+  <div class="rfooter-bottom">
+    <p>2026 © CSBI, Prince Mohammad Bin Fahd University — All Rights Reserved.</p>
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('.nav-links a').forEach(function(a){a.addEventListener('click',function(){document.querySelector('.nav-links').classList.remove('open');});});
+document.addEventListener('click',function(e){var nav=document.querySelector('.nav');if(!nav.contains(e.target)){document.querySelector('.nav-links').classList.remove('open');}});
+// Mobile dropdown toggle
+document.querySelectorAll('.nav-links li.has-dropdown > a').forEach(function(a){
+  a.addEventListener('click',function(e){
+    if(window.innerWidth<=900){
+      e.preventDefault();
+      var li=this.closest('li');
+      li.classList.toggle('open');
+    }
+  });
+});
+</script>
+</body>
+</html>
